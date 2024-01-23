@@ -29,16 +29,11 @@ public void OnPluginStart()
     RegServerCmd("sm_mapconfigserver", CB_CVarServer, "sets and save a custom cvar");
 }
 
-public Action a_getmapcfg(int args){
-    GetMapCFG();
-    return Plugin_Handled;
-}
 
-public Action a_SaveMapCFG(int args){
+public OnMapEnd() 
+{
     SaveMapCFG();
-    return Plugin_Handled;
 }
-
 
 //note to self: OnMapStart is loaded OnPluginStart if plugin reloaded
 public void OnMapStart(){
@@ -292,3 +287,12 @@ public Action CB_CVarServer(int args)
     return Plugin_Handled;
 }
 
+public Action a_getmapcfg(int args){
+    GetMapCFG();
+    return Plugin_Handled;
+}
+
+public Action a_SaveMapCFG(int args){
+    SaveMapCFG();
+    return Plugin_Handled;
+}
