@@ -5,7 +5,7 @@ This is useful for, when playing, moderators spot something that breaks a map or
 
 ```
 To use: 
-Client command:   sm_mapconfig <sm_cvar> <value>
+Client command: sm_mapconfig <sm_cvar> <value>
 Server command: sm_mapconfigserver <sm_cvar> <value>
 ```
 
